@@ -40,16 +40,16 @@ namespace Class3Studio
             return menuString;
         }
 
-        public static void PrintMenu(List<MenuItem> menu)
+        public void PrintMenu(List<MenuItem> menu)
         {
             foreach (object item in menu)
             {
                 Console.WriteLine(item);
             }
         }
-        public static void PrintItem(MenuItem item)
+        public void PrintItem(MenuItem item)
         {
-            Console.WriteLine($"{ item.Name } - ${ item.Price}, { item.Description}, { item.Category} {item.IsNew}");
+            Console.WriteLine($"{ item.Name } - ${ item.Price}, { item.Description}, {item.Category}, {item.IsNew}");
         }
 
     }
